@@ -1,5 +1,5 @@
 
-\# Mcp-sync
+\# Mcp-Sync
 
 
 > One config file. Every editor. Always in sync.
