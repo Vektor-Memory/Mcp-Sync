@@ -1,0 +1,40 @@
+{
+  "name": "@vektormemory/vek-sync",
+  "version": "0.3.0",
+  "description": "Portable MCP server config sync across Claude Desktop, Cursor, VS Code, Windsurf and more.",
+  "type": "module",
+  "bin": {
+    "vek-sync": "./vek-sync.mjs"
+  },
+  "files": [
+    "vek-sync.mjs",
+    "connectors/",
+    "utils/",
+    "README.md",
+    "SPEC.md"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "config",
+    "sync",
+    "portable",
+    "vek-sync",
+    "claude",
+    "cursor",
+    "vscode",
+    "windsurf",
+    "agent-tools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vektor-Memory/vek-sync.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {}
+}
