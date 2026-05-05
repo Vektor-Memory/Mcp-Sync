@@ -4,10 +4,7 @@
 
 > One config file. Every editor. Always in sync.
 
-
-
-`mcp-sync` is a CLI tool that keeps your MCP (Model Context Protocol) server configurations in sync across all your AI editors — Claude Desktop, Cursor, VS Code, Windsurf, and Claude Code.
-
+`mcp-sync` is a standalone CLI tool that keeps your MCP (Model Context Protocol) server configurations in sync across all your AI editors — Claude Desktop, Cursor, VS Code, Windsurf, and Claude Code. No account. No cloud. Just a single `.mcp.json` file and one command.
 
 
 Define your servers once in `.mcp.json`. Push to every editor with one command. Pull from any editor to bootstrap the file. Store secrets safely in an encrypted local vault.
@@ -188,9 +185,19 @@ mcp-sync diff
 
 
 
-\### `mcp-sync vault`
-
+### `mcp-sync vault`
 Store secrets encrypted on disk, machine-bound with AES-256-GCM. Reference them in `.mcp.json` as `vault:key-name`.
+
+> **No account required.** The vault is local-only — secrets are encrypted on your machine and never leave it.
+
+```bash
+mcp-sync vault set my-api-key sk-abc123
+mcp-sync vault get my-api-key
+mcp-sync vault list
+mcp-sync vault delete my-api-key
+```
+
+Vault files live in `~/.mcp-sync/` with permissions set to `600`. The encryption key is derived from your machine identity — secrets encrypted on one machine cannot be read on another.
 
 
 
