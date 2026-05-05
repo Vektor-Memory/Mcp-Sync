@@ -9,6 +9,8 @@ import { resolve }                               from 'path';
 import * as mcpfile                              from './utils/mcpfile.js';
 import * as vault                                from './utils/vault.js';
 import { claudeDesktop, cursor, vscode, windsurf, claudeCode } from './connectors/index.js';
+import { resolveObject } from './utils/vault.js';
+
 
 const CONNECTORS = { claudeDesktop, cursor, vscode, windsurf, claudeCode };
 const CONNECTOR_NAMES = Object.keys(CONNECTORS);
@@ -56,11 +58,12 @@ function cmdInit() {
 function cmdSync() {
   const filePath = getMcpFile();
   const mcp      = mcpfile.read(filePath);
+  const resolved = { ...mcp, servers: resolveObject(mcp.servers) };
   const conns    = getConnectors();
   let   anyErr   = false;
   for (const [name, conn] of Object.entries(conns)) {
     try {
-      const result = conn.sync(mcp);
+      const result = conn.sync(resolved);
       console.log(`✓ ${name}: wrote ${result.count} server(s) → ${result.written}`);
     } catch (err) {
       console.error(`✗ ${name}: ${err.message}`);
@@ -71,7 +74,6 @@ function cmdSync() {
   mcpfile.write(filePath, mcp);
   if (anyErr) process.exit(1);
 }
-
 function cmdExport() {
   const filePath = getMcpFile();
   const existing = existsSilent(filePath) ? mcpfile.read(filePath) : { mcpSync: { version: '1.0' }, servers: {} };
