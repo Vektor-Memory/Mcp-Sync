@@ -13,8 +13,6 @@ Define your servers once in `.mcp.json`. Push to every editor with one command. 
 
 \## Install
 
-<img width="1109" height="427" alt="image" src="https://github.com/user-attachments/assets/594c3fa5-11fb-4c9b-b7f0-f88320765f00" />
-
 
 
 ```bash

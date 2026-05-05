@@ -1,6 +1,6 @@
 {
   "name": "@vektormemory/mcp-sync",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Portable MCP server config sync across Claude Desktop, Cursor, VS Code, Windsurf and more.",
   "type": "module",
   "bin": {
