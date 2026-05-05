@@ -139,7 +139,9 @@ function cmdVault() {
   const sub = positional(0);
   if (sub === 'set') {
     const name  = positional(1);
-    const value = positional(2);
+    // Join everything after the name to support values with spaces
+    const rest  = args.filter(a => !a.startsWith('--'));
+    const value = rest.slice(2).join(' ');
     if (!name || !value) { console.error('Usage: mcp-sync vault set <name> <value>'); process.exit(1); }
     vault.set(name, value);
     console.log(`vault: stored "${name}"`);
