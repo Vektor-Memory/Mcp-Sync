@@ -1,8 +1,10 @@
+
 \# Mcp-sync
 
 
-
 > One config file. Every editor. Always in sync.
+>
+> <img width="1096" height="416" alt="Screenshot 2026-05-05 193043" src="https://github.com/user-attachments/assets/85a4521b-7db1-4b62-a5d7-7aa1ee4d0882" />
 
 `mcp-sync` is a standalone CLI tool that keeps your MCP (Model Context Protocol) server configurations in sync across all your AI editors — Claude Desktop, Cursor, VS Code, Windsurf, and Claude Code. No account. No cloud. Just a single `.mcp.json` file and one command.
 
@@ -13,7 +15,8 @@ Define your servers once in `.mcp.json`. Push to every editor with one command. 
 
 \## Install
 
-
+<img width="1084" height="550" alt="Screenshot 2026-05-05 192552" src="https://github.com/user-attachments/assets/c8f53441-7acb-4d44-8c9f-bccb00572452" />
+<img width="1091" height="430" alt="Screenshot 2026-05-05 193013" src="https://github.com/user-attachments/assets/e737ccf5-e32f-4bee-9ab3-8f5e4605a22e" />
 
 ```bash
 
