@@ -2,10 +2,10 @@
 
 > One config file. Every editor. Always in sync.
 
-<img width="1034" height="486" alt="Screenshot 2026-05-06 091247" src="https://github.com/user-attachments/assets/386b513d-c75f-49ae-99a3-bf1a0d0adde5" />
+
 <img width="1089" height="442" alt="Screenshot 2026-05-06 091216" src="https://github.com/user-attachments/assets/fd118a2a-c077-45e0-801c-7b46b2496572" />
 <img width="1070" height="460" alt="Screenshot 2026-05-06 091233" src="https://github.com/user-attachments/assets/13192cdd-f922-45e8-8a5d-00cbd2300978" />
-
+<img width="1034" height="486" alt="Screenshot 2026-05-06 091247" src="https://github.com/user-attachments/assets/386b513d-c75f-49ae-99a3-bf1a0d0adde5" />
 `vek-sync` is a zero-dependency CLI that keeps your MCP (Model Context Protocol) server configurations in sync across every AI editor — Claude Desktop, Cursor, VS Code, Windsurf, Claude Code, Cline, Roo Code, Gemini CLI, GitHub Copilot, Continue, and Codex. No account. No cloud. Just a single `.mcp.json` file and one command.
 
 Define your servers once. Push to every editor. Pull from any editor to bootstrap. Ping servers to verify they're alive. Share configs via URL. Store secrets safely in an encrypted local vault.
