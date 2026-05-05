@@ -2,11 +2,18 @@
 
 > One config file. Every editor. Always in sync.
 
+
+
+> <img width="1090" height="442" alt="Screenshot 2026-05-06 084151" src="https://github.com/user-attachments/assets/024f8354-63cd-49e8-8fb4-dbfd4706c5ee" />
+
+
 `mcp-sync` is a zero-dependency CLI that keeps your MCP (Model Context Protocol) server configurations in sync across every AI editor — Claude Desktop, Cursor, VS Code, Windsurf, Claude Code, Cline, Roo Code, Gemini CLI, GitHub Copilot, Continue, and Codex. No account. No cloud. Just a single `.mcp.json` file and one command.
 
 Define your servers once. Push to every editor. Pull from any editor to bootstrap. Ping servers to verify they're alive. Share configs via URL. Store secrets safely in an encrypted local vault.
 
 ## Install
+
+<img width="1067" height="465" alt="Screenshot 2026-05-06 084212" src="https://github.com/user-attachments/assets/cddd8b40-a61c-4a53-b414-9f3cd79203d4" />
 
 ```bash
 npm install -g @vektormemory/mcp-sync
@@ -57,6 +64,7 @@ Commit this to your repo (secrets use vault refs, never plaintext):
 ```
 
 ## Commands
+<img width="1063" height="489" alt="Screenshot 2026-05-06 084233" src="https://github.com/user-attachments/assets/2669bab1-f67a-44ba-acb2-05dc9c6bf31d" />
 
 ### `mcp-sync init`
 
