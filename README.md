@@ -2,6 +2,7 @@
 
 > One config file. Every editor. Always in sync.
 
+https://medium.com/ai-in-plain-english/mcp-sync-one-config-file-to-rule-them-all-8fa0837fc4c8
 
 <img width="1089" height="442" alt="Screenshot 2026-05-06 091216" src="https://github.com/user-attachments/assets/fd118a2a-c077-45e0-801c-7b46b2496572" />
 <img width="1070" height="460" alt="Screenshot 2026-05-06 091233" src="https://github.com/user-attachments/assets/13192cdd-f922-45e8-8a5d-00cbd2300978" />
