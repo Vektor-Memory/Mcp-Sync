@@ -11,9 +11,10 @@
     "connectors/",
     "utils/",
     "README.md",
-    "SPEC.md"
+    "SPEC.md",
+    "LICENSE",
+    "SECURITY.md"
   ],
-  "license": "Apache-2.0",
   "keywords": [
     "mcp",
     "model-context-protocol",
@@ -25,11 +26,24 @@
     "cursor",
     "vscode",
     "windsurf",
-    "agent-tools"
+    "agent-tools",
+    "cli",
+    "aes-256"
   ],
+  "author": "Vektor Memory <hello@vektormemory.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Vektor-Memory/vek-sync",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vektor-Memory/vek-sync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vektor-Memory/vek-sync/issues",
+    "email": "hello@vektormemory.com"
+  },
+  "funding": {
+    "type": "other",
+    "url": "https://vektormemory.com/downloads"
   },
   "engines": {
     "node": ">=18.0.0"
